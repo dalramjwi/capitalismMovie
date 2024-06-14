@@ -19,3 +19,12 @@ const getMovieAJAX = () => {
   xhr.send();
 };
 getMovieAJAX();
+// function a() {
+for (let i = 0; i < 5; i++) {
+  const name = resultVariables()[i]._name;
+  const id = resultVariables()[i]._id;
+  const a = (name[i] = document.getElementById(`${id}`));
+  return a;
+  console.log(a);
+}
+// }
