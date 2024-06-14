@@ -28,6 +28,7 @@ const getMovieAJAX = () => {
       result.results.forEach((item) => {
         console.log(item.title);
         console.log(item);
+        setName[3].innerHTML += `<li>${item.title}</li>`;
       });
     }
   });
