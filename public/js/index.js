@@ -8,6 +8,8 @@ const getMovieAJAX = () => {
     if (xhr.status === 200) {
       console.log("데이터 조회");
       console.dir(xhr);
+      const result = JSON.parse(xhr.responseText);
+      console.dir(result);
     }
   });
   xhr.send(data);
