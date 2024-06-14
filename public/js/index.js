@@ -6,6 +6,15 @@ resultVariables().forEach((item) => {
   setName.push(item._name);
   setId.push(item._id);
 });
+const numberRandom = [];
+for (let i = 0; i < 11; i++) {
+  const randomIndex = Math.floor(Math.random() * 101);
+  if (numberRandom[i] !== randomIndex) {
+    numberRandom.push(randomIndex);
+  }
+}
+console.log(numberRandom);
+
 for (let i = 0; i < setName.length; i++) {
   setName[i] = document.getElementById(`${setId[i]}`);
 }
@@ -20,8 +29,6 @@ const getMovieAJAX = (page) => {
     if (xhr.status === 200) {
       const result = JSON.parse(xhr.responseText);
       const listArray = [];
-      const randomIndex = Math.floor(Math.random() * result.results.length);
-      console.log(result.results);
       result.results.forEach((item) => {
         listArray.push(
           `<li>제목 : ${item.title} <br> 소개글 : ${item.overview} <br>        <img src="https://image.tmdb.org/t/p/w500/${item.poster_path}" alt="${item.title}poster">
