@@ -1,12 +1,5 @@
-import { MakeVariables } from "./MakeVariables.js";
-import { tagName } from "./tagName.js";
-function resultVariables() {
-  const arr = [];
-  tagName.forEach((item) => {
-    arr.push(new MakeVariables(item, item));
-  });
-  return arr;
-}
+import { resultVariables } from "./useMakeVariables.js";
+
 console.log(resultVariables());
 const getMovieAJAX = () => {
   const xhr = new XMLHttpRequest();
