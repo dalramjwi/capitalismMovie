@@ -12,6 +12,6 @@ const getMovieAJAX = () => {
       console.dir(result);
     }
   });
-  xhr.send(data);
+  xhr.send();
 };
 getMovieAJAX();
