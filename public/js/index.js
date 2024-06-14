@@ -25,6 +25,10 @@ const getMovieAJAX = () => {
       const result = JSON.parse(xhr.responseText);
       console.dir(result);
       console.dir(result.results);
+      result.results.forEach((item) => {
+        console.log(item.title);
+        console.log(item);
+      });
     }
   });
   xhr.send();
