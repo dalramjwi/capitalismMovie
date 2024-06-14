@@ -1,4 +1,4 @@
-class MakeVariables {
+export class MakeVariables {
   constructor(name, id) {
     this.name = name;
     this.id = id;
