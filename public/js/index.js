@@ -1,4 +1,5 @@
 import { resultVariables } from "./useMakeVariables.js";
+import { tagName } from "./tagName.js";
 
 console.log(resultVariables());
 const getMovieAJAX = () => {
@@ -20,11 +21,18 @@ const getMovieAJAX = () => {
 };
 getMovieAJAX();
 // function a() {
-for (let i = 0; i < 5; i++) {
-  const name = resultVariables()[i]._name;
-  const id = resultVariables()[i]._id;
-  const a = (name[i] = document.getElementById(`${id}`));
-  return a;
-  console.log(a);
-}
+//   for (let i = 0; i < 5; i++) {
+//     const name = resultVariables()[i]._name;
+//     const id = resultVariables()[i]._id;
+//     const arr = [];
+//     const target = document.getElementById(id);
+//     return target;
+//   }
 // }
+const arr = [];
+tagName.forEach((item) => {
+  arr.push(document.getElementById(item));
+});
+console.log(arr);
+const a = arr[1];
+console.log(0);
