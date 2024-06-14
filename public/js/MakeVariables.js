@@ -1,4 +1,9 @@
 export class MakeVariables {
+  /**
+   * 변수의 이름과 id 를 객체로 만들어준다.
+   * @param {string} name 변수의 이름
+   * @param {string} id id의 이름
+   */
   constructor(name, id) {
     this.name = name;
     this.id = id;
