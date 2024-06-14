@@ -1,6 +1,13 @@
 import { MakeVariables } from "./MakeVariables.js";
-const test = new MakeVariables("root", "root");
-console.log(test);
+import { tagName } from "./tagName.js";
+function resultVariables() {
+  const arr = [];
+  tagName.forEach((item) => {
+    arr.push(new MakeVariables(item, item));
+  });
+  return arr;
+}
+console.log(resultVariables());
 const getMovieAJAX = () => {
   const xhr = new XMLHttpRequest();
   const key = `583ae85ee3d661098b9bed3b3c43ec4b`;
