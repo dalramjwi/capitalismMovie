@@ -1,0 +1,9 @@
+#banner {
+  font-weight: bold;
+  text-align: center;
+  background-color: red;
+}
+#page {
+  display: flex;
+  flex-direction: column;
+}
