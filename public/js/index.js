@@ -9,7 +9,7 @@ resultVariables().forEach((item) => {
 for (let i = 0; i < setName.length; i++) {
   setName[i] = document.getElementById(`${setId[i]}`);
 }
-
+setName[1].innerHTML = "자본주의식 영화 맞추기";
 //AJAX 사용
 const getMovieAJAX = (page) => {
   const xhr = new XMLHttpRequest();
