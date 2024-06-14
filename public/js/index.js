@@ -1,3 +1,6 @@
+import { MakeVariables } from "./MakeVariables.js";
+const test = new MakeVariables("root", "root");
+console.log(test);
 const getMovieAJAX = () => {
   const xhr = new XMLHttpRequest();
   const key = `583ae85ee3d661098b9bed3b3c43ec4b`;
