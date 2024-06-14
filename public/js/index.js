@@ -6,10 +6,11 @@ const getMovieAJAX = () => {
 
   xhr.addEventListener("load", () => {
     if (xhr.status === 200) {
-      console.log("데이터 조회");
-      console.dir(xhr);
+      // console.log("데이터 조회");
+      // console.dir(xhr);
       const result = JSON.parse(xhr.responseText);
       console.dir(result);
+      console.dir(result.results);
     }
   });
   xhr.send();
