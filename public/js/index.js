@@ -1,1 +1,3 @@
-const xhr = new XMLHttpRequest();
+const getMovieAJAX = () => {
+  const xhr = new XMLHttpRequest();
+};
